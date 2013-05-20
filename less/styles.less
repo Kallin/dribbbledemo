@@ -1,0 +1,77 @@
+// compound complimentary colors from kuler.adobe.com
+@color1: #95853C;
+@color2: #C8A814;
+@color3: #FB9C00; // from requirements
+@color4: #3FD2FB;
+@color5: #14C8BF;
+
+@baseFontFamily: "HelveticaNeue-light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// a little reset
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: @baseFontFamily;
+  margin: 0;
+  background-color: @color5;
+  header {
+    background-color: @color3;
+    nav {
+      margin-right: auto;
+      margin-left: auto;
+      width: 800px;
+      ul {
+        display: table;
+        li {
+          padding: 5px;
+          float: left;
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul#dribbbles {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+
+  li {
+    display: inline;
+    padding-right: 20px;
+    padding-top: 20px;
+    float: left;
+    .frame {
+      border-radius: 5px;
+      background-color: @color1;
+      padding: 15px;
+    }
+  }
+}
+
+.active {
+  color: @color4;
+  background-color: #000000;
+  &:hover,
+  &:focus {
+    background-color: #000000;
+    cursor: default;
+  }
+}
